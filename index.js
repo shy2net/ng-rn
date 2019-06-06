@@ -74,7 +74,7 @@ class NgRename {
   findNgProjectDir(dir) {
     dir = dir || this.dir
     try {
-      fs.readFileSync(`${dir}/.angular-cli.json`)
+      fs.readFileSync(`${dir}/angular.json`)
       return dir
     }
     catch (e) {
